@@ -6,6 +6,7 @@ import (
 
 	"github.com/aws/aws-cdk-go/awscdk/v2"
 	"github.com/aws/aws-cdk-go/awscdk/v2/awslambda"
+	"github.com/aws/aws-cdk-go/awscdk/v2/interfaces"
 	"github.com/aws/constructs-go/constructs/v10"
 	"github.com/cdklabs/awscdk-kubectl-go/kubectlv33/v2/internal"
 )
@@ -23,7 +24,7 @@ type KubectlV33Layer interface {
 	// however, for imported resources
 	// (those obtained from static methods like fromRoleArn, fromBucketName, etc.),
 	// that might be different than the stack they were imported into.
-	Env() *awscdk.ResourceEnvironment
+	Env() *interfaces.ResourceEnvironment
 	// The ARN of the Lambda Layer version that this Layer defines.
 	LayerVersionArn() *string
 	// The tree node.
@@ -90,8 +91,8 @@ func (j *jsiiProxy_KubectlV33Layer) CompatibleRuntimes() *[]awslambda.Runtime {
 	return returns
 }
 
-func (j *jsiiProxy_KubectlV33Layer) Env() *awscdk.ResourceEnvironment {
-	var returns *awscdk.ResourceEnvironment
+func (j *jsiiProxy_KubectlV33Layer) Env() *interfaces.ResourceEnvironment {
+	var returns *interfaces.ResourceEnvironment
 	_jsii_.Get(
 		j,
 		"env",
@@ -139,7 +140,6 @@ func (j *jsiiProxy_KubectlV33Layer) Stack() awscdk.Stack {
 	)
 	return returns
 }
-
 
 func NewKubectlV33Layer(scope constructs.Construct, id *string) KubectlV33Layer {
 	_init_.Initialize()
@@ -347,4 +347,3 @@ func (k *jsiiProxy_KubectlV33Layer) ToString() *string {
 
 	return returns
 }
-
