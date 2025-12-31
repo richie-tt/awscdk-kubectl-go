@@ -1,4 +1,4 @@
-module github.com/cdklabs/awscdk-kubectl-go/kubectlv33/v2
+module github.com/richie-tt/awscdk-kubectl-go/kubectlv33/v2
 
 go 1.23.0
 

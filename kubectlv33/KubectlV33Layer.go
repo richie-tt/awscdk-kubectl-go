@@ -2,13 +2,13 @@ package kubectlv33
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdklabs/awscdk-kubectl-go/kubectlv33/v2/jsii"
+	_init_ "github.com/richie-tt/awscdk-kubectl-go/kubectlv33/v2/jsii"
 
 	"github.com/aws/aws-cdk-go/awscdk/v2"
 	"github.com/aws/aws-cdk-go/awscdk/v2/awslambda"
 	"github.com/aws/aws-cdk-go/awscdk/v2/interfaces"
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdklabs/awscdk-kubectl-go/kubectlv33/v2/internal"
+	"github.com/richie-tt/awscdk-kubectl-go/kubectlv33/v2/internal"
 )
 
 // A CDK Asset construct that contains `kubectl` and `helm`.

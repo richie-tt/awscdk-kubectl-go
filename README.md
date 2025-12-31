@@ -3,8 +3,8 @@
 After upgrading `aws-cdk-go` to `>v2.223.0` there was change with `Env()` function which will complain now
 
 ```
-/go/pkg/mod/github.com/cdklabs/awscdk-kubectl-go/kubectlv34/v2@v2.0.0/KubectlV34Layer.go:15:2: duplicate method Env
-go/pkg/mod/github.com/cdklabs/awscdk-kubectl-go/kubectlv34/v2@v2.0.0/KubectlV34Layer.go:26:2: other declaration of method Env
+.../kubectlv34/v2@v2.0.0/KubectlV34Layer.go:15:2: duplicate method Env
+.../gkubectlv34/v2@v2.0.0/KubectlV34Layer.go:26:2: other declaration of method Env
 ```
 
 is required to change the `awscdk.ResourceEnvironment` -> `interfaces.ResourceEnvironment`
